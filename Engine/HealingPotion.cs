@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    public class Player:Creatures
+    public class HealingPotion : Items
     {
         
-        public int Gold { get; set; }
-        public int ExperiencePoints { get; set; }
-        public int Level { get; set; }
+        public int AmountToHeal { get; set; }
     }
 }

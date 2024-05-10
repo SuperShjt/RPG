@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    public class Player:Creatures
+    public class weapons:Items
     {
         
-        public int Gold { get; set; }
-        public int ExperiencePoints { get; set; }
-        public int Level { get; set; }
+        public int MinimumDamage { get; set; }
+        public int MaximumDamage { get; set; }
     }
 }

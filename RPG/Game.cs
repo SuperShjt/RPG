@@ -11,8 +11,8 @@ namespace RPG
         public Game()
         {
             InitializeComponent();
+            Location l = new Location(0, "Home", "Home sweet Home nothing beat going back to your bed");
             P1 = new Player();
-
             P1.MaximumHitPoints = 100;
             P1.CurrentHitPoints = 100;
             P1.Gold = 1000;
