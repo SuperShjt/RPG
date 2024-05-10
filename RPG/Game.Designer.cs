@@ -36,7 +36,6 @@
             lblGold = new Label();
             lblExp = new Label();
             lblLevel = new Label();
-            BtnStart = new Button();
             SuspendLayout();
             // 
             // label1
@@ -107,22 +106,11 @@
             lblLevel.Size = new Size(0, 15);
             lblLevel.TabIndex = 7;
             // 
-            // BtnStart
-            // 
-            BtnStart.Location = new Point(143, 524);
-            BtnStart.Name = "BtnStart";
-            BtnStart.Size = new Size(75, 23);
-            BtnStart.TabIndex = 8;
-            BtnStart.Text = "Start";
-            BtnStart.UseVisualStyleBackColor = true;
-            BtnStart.Click += BtnStart_Click;
-            // 
             // Game
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(719, 651);
-            Controls.Add(BtnStart);
             Controls.Add(lblLevel);
             Controls.Add(lblExp);
             Controls.Add(lblGold);
@@ -147,6 +135,5 @@
         private Label lblGold;
         private Label lblExp;
         private Label lblLevel;
-        private Button BtnStart;
     }
 }

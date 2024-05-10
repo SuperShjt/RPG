@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    internal class Player
+    public class Player
     {
-        internal int CurrentHitPoints { get; set; }
-        internal int MaximumHitPoints { get; set; }
-        internal int Gold { get; set; }
-        internal int ExperiencePoints { get; set; }
-        internal int Level { get; set; }
+        public int CurrentHitPoints { get; set; }
+        public int MaximumHitPoints { get; set; }
+        public int Gold { get; set; }
+        public int ExperiencePoints { get; set; }
+        public int Level { get; set; }
     }
 }
