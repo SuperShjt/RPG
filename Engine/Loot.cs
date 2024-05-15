@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    public class NPC
+    public class Loot
     {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string Convo { get; set; }
     }
 }
