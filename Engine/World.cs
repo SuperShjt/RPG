@@ -12,6 +12,7 @@ namespace Engine
         public static readonly List<Monster> Monsters = new List<Monster>();
         public static readonly List<Quest> Quests = new List<Quest>();
         public static readonly List<Location> Locations = new List<Location>();
+        public static readonly List<NPC> Npcs = new List<NPC>();
 
         public const int ITEM_ID_RUSTY_SWORD = 1;
         public const int ITEM_ID_RAT_TAIL = 2;
@@ -69,6 +70,18 @@ namespace Engine
             Items.Add(new Items(ITEM_ID_SPIDER_FANG, "Spider fang", "Spider fangs"));
             Items.Add(new Items(ITEM_ID_SPIDER_SILK, "Spider silk", "Spider silks"));
             Items.Add(new Items(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes"));
+        }
+        private static void PopulateNpc() { 
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
         }
 
         private static void PopulateMonsters()
@@ -226,6 +239,18 @@ namespace Engine
                 if (location.ID == id)
                 {
                     return location;
+                }
+            }
+
+            return null;
+        }
+        public static NPC NpcByID(int id)
+        {
+            foreach (NPC np in Npcs)
+            {
+                if (np.ID == id)
+                {
+                    return np;
                 }
             }
 

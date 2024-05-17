@@ -37,7 +37,22 @@
             lblExp = new Label();
             lblLevel = new Label();
             gb1 = new GroupBox();
+            Saction = new Label();
+            cboWeapon = new ComboBox();
+            cboPotions = new ComboBox();
+            btnWeap = new Button();
+            btnPos = new Button();
+            btnNorth = new Button();
+            btnEast = new Button();
+            btnWest = new Button();
+            btnSouth = new Button();
+            rtbLocation = new RichTextBox();
+            rtbMsg = new RichTextBox();
+            dgvInv = new DataGridView();
+            dgvQuests = new DataGridView();
             gb1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvInv).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvQuests).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -120,22 +135,165 @@
             gb1.Controls.Add(lblHit);
             gb1.Location = new Point(12, 12);
             gb1.Name = "gb1";
-            gb1.Size = new Size(156, 175);
+            gb1.Size = new Size(156, 133);
             gb1.TabIndex = 8;
             gb1.TabStop = false;
             gb1.Text = "Stats";
+            // 
+            // Saction
+            // 
+            Saction.AutoSize = true;
+            Saction.Location = new Point(456, 530);
+            Saction.Name = "Saction";
+            Saction.Size = new Size(45, 15);
+            Saction.TabIndex = 9;
+            Saction.Text = "Action:";
+            // 
+            // cboWeapon
+            // 
+            cboWeapon.FormattingEnabled = true;
+            cboWeapon.Location = new Point(586, 548);
+            cboWeapon.Name = "cboWeapon";
+            cboWeapon.Size = new Size(121, 23);
+            cboWeapon.TabIndex = 10;
+            // 
+            // cboPotions
+            // 
+            cboPotions.FormattingEnabled = true;
+            cboPotions.Location = new Point(586, 577);
+            cboPotions.Name = "cboPotions";
+            cboPotions.Size = new Size(121, 23);
+            cboPotions.TabIndex = 11;
+            // 
+            // btnWeap
+            // 
+            btnWeap.Location = new Point(447, 548);
+            btnWeap.Name = "btnWeap";
+            btnWeap.Size = new Size(75, 23);
+            btnWeap.TabIndex = 12;
+            btnWeap.Text = "Use:";
+            btnWeap.UseVisualStyleBackColor = true;
+            // 
+            // btnPos
+            // 
+            btnPos.Location = new Point(447, 577);
+            btnPos.Name = "btnPos";
+            btnPos.Size = new Size(75, 23);
+            btnPos.TabIndex = 13;
+            btnPos.Text = "Use:";
+            btnPos.UseVisualStyleBackColor = true;
+            // 
+            // btnNorth
+            // 
+            btnNorth.Location = new Point(399, 400);
+            btnNorth.Name = "btnNorth";
+            btnNorth.Size = new Size(75, 23);
+            btnNorth.TabIndex = 14;
+            btnNorth.Text = "North";
+            btnNorth.UseVisualStyleBackColor = true;
+            // 
+            // btnEast
+            // 
+            btnEast.Location = new Point(315, 440);
+            btnEast.Name = "btnEast";
+            btnEast.Size = new Size(75, 23);
+            btnEast.TabIndex = 15;
+            btnEast.Text = "East";
+            btnEast.UseVisualStyleBackColor = true;
+            // 
+            // btnWest
+            // 
+            btnWest.Location = new Point(494, 440);
+            btnWest.Name = "btnWest";
+            btnWest.Size = new Size(75, 23);
+            btnWest.TabIndex = 16;
+            btnWest.Text = "West";
+            btnWest.UseVisualStyleBackColor = true;
+            // 
+            // btnSouth
+            // 
+            btnSouth.Location = new Point(399, 476);
+            btnSouth.Name = "btnSouth";
+            btnSouth.Size = new Size(75, 23);
+            btnSouth.TabIndex = 17;
+            btnSouth.Text = "South";
+            btnSouth.UseVisualStyleBackColor = true;
+            // 
+            // rtbLocation
+            // 
+            rtbLocation.Location = new Point(315, 18);
+            rtbLocation.Name = "rtbLocation";
+            rtbLocation.Size = new Size(392, 96);
+            rtbLocation.TabIndex = 18;
+            rtbLocation.Text = "";
+            // 
+            // rtbMsg
+            // 
+            rtbMsg.Location = new Point(315, 120);
+            rtbMsg.Name = "rtbMsg";
+            rtbMsg.Size = new Size(392, 248);
+            rtbMsg.TabIndex = 19;
+            rtbMsg.Text = "";
+            // 
+            // dgvInv
+            // 
+            dgvInv.AllowUserToAddRows = false;
+            dgvInv.AllowUserToDeleteRows = false;
+            dgvInv.AllowUserToResizeColumns = false;
+            dgvInv.AllowUserToResizeRows = false;
+            dgvInv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvInv.EditMode = DataGridViewEditMode.EditProgrammatically;
+            dgvInv.Enabled = false;
+            dgvInv.Location = new Point(12, 151);
+            dgvInv.MultiSelect = false;
+            dgvInv.Name = "dgvInv";
+            dgvInv.ReadOnly = true;
+            dgvInv.Size = new Size(297, 150);
+            dgvInv.TabIndex = 20;
+            // 
+            // dgvQuests
+            // 
+            dgvQuests.AllowUserToAddRows = false;
+            dgvQuests.AllowUserToDeleteRows = false;
+            dgvQuests.AllowUserToResizeColumns = false;
+            dgvQuests.AllowUserToResizeRows = false;
+            dgvQuests.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvQuests.EditMode = DataGridViewEditMode.EditProgrammatically;
+            dgvQuests.Enabled = false;
+            dgvQuests.Location = new Point(12, 307);
+            dgvQuests.MultiSelect = false;
+            dgvQuests.Name = "dgvQuests";
+            dgvQuests.ReadOnly = true;
+            dgvQuests.Size = new Size(297, 293);
+            dgvQuests.TabIndex = 21;
             // 
             // Game
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(719, 651);
+            Controls.Add(dgvQuests);
+            Controls.Add(dgvInv);
+            Controls.Add(rtbMsg);
+            Controls.Add(rtbLocation);
+            Controls.Add(btnSouth);
+            Controls.Add(btnWest);
+            Controls.Add(btnEast);
+            Controls.Add(btnNorth);
+            Controls.Add(btnPos);
+            Controls.Add(btnWeap);
+            Controls.Add(cboPotions);
+            Controls.Add(cboWeapon);
+            Controls.Add(Saction);
             Controls.Add(gb1);
             Name = "Game";
             Text = "Howk Vs World";
             gb1.ResumeLayout(false);
             gb1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvInv).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvQuests).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -149,5 +307,18 @@
         private Label lblExp;
         private Label lblLevel;
         private GroupBox gb1;
+        private Label Saction;
+        private ComboBox cboWeapon;
+        private ComboBox cboPotions;
+        private Button btnWeap;
+        private Button btnPos;
+        private Button btnNorth;
+        private Button btnEast;
+        private Button btnWest;
+        private Button btnSouth;
+        private RichTextBox rtbLocation;
+        private RichTextBox rtbMsg;
+        private DataGridView dgvInv;
+        private DataGridView dgvQuests;
     }
 }
