@@ -37,15 +37,7 @@
             lblExp = new Label();
             lblLevel = new Label();
             gb1 = new GroupBox();
-            groupBox1 = new GroupBox();
-            DescBox = new Label();
-            btn1 = new Button();
-            groupBox2 = new GroupBox();
-            groupBox3 = new GroupBox();
-            groupBox4 = new GroupBox();
-            btn2 = new Button();
             gb1.SuspendLayout();
-            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -133,89 +125,16 @@
             gb1.TabStop = false;
             gb1.Text = "Stats";
             // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(DescBox);
-            groupBox1.Location = new Point(174, 12);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(273, 175);
-            groupBox1.TabIndex = 9;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Description";
-            // 
-            // DescBox
-            // 
-            DescBox.AutoSize = true;
-            DescBox.Location = new Point(6, 33);
-            DescBox.MaximumSize = new Size(273, 0);
-            DescBox.Name = "DescBox";
-            DescBox.Size = new Size(0, 15);
-            DescBox.TabIndex = 0;
-            // 
-            // btn1
-            // 
-            btn1.Location = new Point(272, 572);
-            btn1.Name = "btn1";
-            btn1.Size = new Size(75, 23);
-            btn1.TabIndex = 10;
-            btn1.Text = "Start";
-            btn1.UseVisualStyleBackColor = true;
-            btn1.Click += button1_Click;
-            // 
-            // groupBox2
-            // 
-            groupBox2.Location = new Point(12, 193);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(156, 279);
-            groupBox2.TabIndex = 11;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Inventory";
-            // 
-            // groupBox3
-            // 
-            groupBox3.Location = new Point(174, 193);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(273, 279);
-            groupBox3.TabIndex = 12;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Dialogue";
-            // 
-            // groupBox4
-            // 
-            groupBox4.Location = new Point(453, 14);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(254, 173);
-            groupBox4.TabIndex = 13;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "\"zone\"";
-            // 
-            // btn2
-            // 
-            btn2.Location = new Point(272, 543);
-            btn2.Name = "btn2";
-            btn2.Size = new Size(75, 23);
-            btn2.TabIndex = 14;
-            btn2.Text = "Function";
-            btn2.UseVisualStyleBackColor = true;
-            // 
             // Game
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(719, 651);
-            Controls.Add(btn2);
-            Controls.Add(groupBox4);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
-            Controls.Add(btn1);
-            Controls.Add(groupBox1);
             Controls.Add(gb1);
             Name = "Game";
             Text = "Howk Vs World";
             gb1.ResumeLayout(false);
             gb1.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -230,12 +149,5 @@
         private Label lblExp;
         private Label lblLevel;
         private GroupBox gb1;
-        private GroupBox groupBox1;
-        private Label DescBox;
-        private Button btn1;
-        private GroupBox groupBox2;
-        private GroupBox groupBox3;
-        private GroupBox groupBox4;
-        private Button btn2;
     }
 }

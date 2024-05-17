@@ -10,10 +10,12 @@ namespace Engine
     {
         public Items Details { get; set; }
         public int Quantity { get; set; }
+        public List<Loot> LootTable { get; set; }
         public Inventory(Items details, int quantity)
         {
             Details = details;
             Quantity = quantity;
+            LootTable = new List<Loot>();
         }
     }
 }
