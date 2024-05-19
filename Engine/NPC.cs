@@ -10,13 +10,11 @@ namespace Engine
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public string Description { get; set; }
         public List<string> Convo { get; set; }
-        public NPC(int id,string name, string description)
+        public NPC(int id,string name)
         {
             ID = id;
             Name = name;
-            Description = description;
            Convo = new List<string>();
         }
     }

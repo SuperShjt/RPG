@@ -54,6 +54,7 @@ namespace Engine
         {
             PopulateItems();
             PopulateMonsters();
+            PopulateNpc();
             PopulateQuests();
             PopulateLocations();
         }
@@ -71,8 +72,14 @@ namespace Engine
             Items.Add(new Items(ITEM_ID_SPIDER_SILK, "Spider silk", "Spider silks"));
             Items.Add(new Items(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes"));
         }
-        private static void PopulateNpc() { 
-            
+        private static void PopulateNpc() {
+            NPC Samer = new NPC(Farmer_ID, "Samer");
+            Samer.Convo.AddRange(new string[] { "Chat","Leave" });
+            Npcs.Add(Samer);
+            NPC Jean = new NPC(BlackSmith_ID, "Jean");
+            Jean.Convo.AddRange(new string[] { "Chat", "leave" });
+            Npcs.Add(Jean);
+
         
         
         

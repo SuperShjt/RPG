@@ -135,7 +135,7 @@
             gb1.Controls.Add(lblHit);
             gb1.Location = new Point(12, 12);
             gb1.Name = "gb1";
-            gb1.Size = new Size(156, 133);
+            gb1.Size = new Size(156, 155);
             gb1.TabIndex = 8;
             gb1.TabStop = false;
             gb1.Text = "Stats";
@@ -143,7 +143,7 @@
             // Saction
             // 
             Saction.AutoSize = true;
-            Saction.Location = new Point(456, 530);
+            Saction.Location = new Point(408, 528);
             Saction.Name = "Saction";
             Saction.Size = new Size(45, 15);
             Saction.TabIndex = 9;
@@ -152,7 +152,7 @@
             // cboWeapon
             // 
             cboWeapon.FormattingEnabled = true;
-            cboWeapon.Location = new Point(586, 548);
+            cboWeapon.Location = new Point(538, 546);
             cboWeapon.Name = "cboWeapon";
             cboWeapon.Size = new Size(121, 23);
             cboWeapon.TabIndex = 10;
@@ -160,14 +160,14 @@
             // cboPotions
             // 
             cboPotions.FormattingEnabled = true;
-            cboPotions.Location = new Point(586, 577);
+            cboPotions.Location = new Point(538, 575);
             cboPotions.Name = "cboPotions";
             cboPotions.Size = new Size(121, 23);
             cboPotions.TabIndex = 11;
             // 
             // btnWeap
             // 
-            btnWeap.Location = new Point(447, 548);
+            btnWeap.Location = new Point(399, 546);
             btnWeap.Name = "btnWeap";
             btnWeap.Size = new Size(75, 23);
             btnWeap.TabIndex = 12;
@@ -176,7 +176,7 @@
             // 
             // btnPos
             // 
-            btnPos.Location = new Point(447, 577);
+            btnPos.Location = new Point(399, 575);
             btnPos.Name = "btnPos";
             btnPos.Size = new Size(75, 23);
             btnPos.TabIndex = 13;
@@ -244,7 +244,7 @@
             dgvInv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvInv.EditMode = DataGridViewEditMode.EditProgrammatically;
             dgvInv.Enabled = false;
-            dgvInv.Location = new Point(12, 151);
+            dgvInv.Location = new Point(12, 173);
             dgvInv.MultiSelect = false;
             dgvInv.Name = "dgvInv";
             dgvInv.ReadOnly = true;
@@ -260,7 +260,7 @@
             dgvQuests.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvQuests.EditMode = DataGridViewEditMode.EditProgrammatically;
             dgvQuests.Enabled = false;
-            dgvQuests.Location = new Point(12, 307);
+            dgvQuests.Location = new Point(12, 329);
             dgvQuests.MultiSelect = false;
             dgvQuests.Name = "dgvQuests";
             dgvQuests.ReadOnly = true;
